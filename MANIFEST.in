@@ -1,0 +1,6 @@
+include README.rst
+include LICENSE
+recursive-include composer/static *.js *.css
+recursive-include composer/templates *.html
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
