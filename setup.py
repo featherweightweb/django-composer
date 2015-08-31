@@ -9,9 +9,17 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-composer',
 
-    version='0.0.1',
+    version='0.0.2',
 
     packages=['composer'],
+    package_data={
+        'composer': ['__init__.py', 'models.py', 'urls.py', 'views.py'],
+        'composer/templates/composer': ['example.html', 'edit.html'],
+        'composer/static/js': ['composer.js', 'composer.min.js'],
+        'composer/static/css': ['composer.css'],
+        'composer/migrations': ['0001_initial.py', '__init__.py'],
+        'composer/templatetags': ['composer.py', '__init__.py']
+    },
 
     license='MIT License',
 
